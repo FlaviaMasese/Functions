@@ -98,10 +98,18 @@ function check3and7(){
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+function reverseString(s){
+    return s.split("").reverse().join("");
+}
+console.log(reverseString)
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
+let upperFirst = "My name is.";
+
+  capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1) + " ";
+  upperFirst += capitalizedWord;
+  console.log(capitalizedWord);
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -110,13 +118,28 @@ function check3and7(){
 */
 
 /* WRITE YOUR ANSWER HERE */
+let cutString = 'Friday'
+let result = cutString.substr(1, 5);
+
+console.log(result)
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
 /* WRITE YOUR ANSWER HERE */
+function giveMeRandom(n) {
 
+    let arrWithNums = [];
+    
+    for(i = 0; i < n; i++) {
+        arrWithNums.push(Math.floor(Math.random() * 10)); 
+    }
+    
+    return arrWithNums;
+}
+
+console.log(giveMeRandom(4));
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
